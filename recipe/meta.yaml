@@ -1,6 +1,6 @@
 {% set name = "dialite" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "93d19dd39b8607ae1342644dff242f26caac098af7a9601a9ab3e24c4c4eb61e" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "108c27255100a726a22fcce87cd3eafa33926a54e5f74770179c31ddb3525105" %}
 
 package:
   name: {{ name }}
