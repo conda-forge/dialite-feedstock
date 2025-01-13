@@ -1,6 +1,6 @@
 {% set name = "dialite" %}
-{% set version = "0.5.3" %}
-{% set sha256 = "de968f805fdc7f5545f15f5e17c2472198e0f6665b77f72be056f553d99292ef" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "8d36c144f5c2388431b9e00a5eae817648df9277e22b5cac29c678663c7cf52f" %}
 
 package:
   name: {{ name }}
@@ -14,12 +14,13 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - flit-core
   run:
     - python >={{ python_min }}
 
@@ -34,7 +35,7 @@ about:
   doc_url: http://dialite.readthedocs.io
   dev_url: https://github.com/flexxui/dialite
   summary: small library to show simple dialogs to the user, without the need for a heavy GUI toolkit.
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
 
 extra:
